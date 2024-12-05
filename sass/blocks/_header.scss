@@ -1,0 +1,33 @@
+header {
+  --logomark-height: 3em;
+  --logomark-padding: 0 1em;
+  display: grid;
+  min-height: 40vh;
+  place-items: center;
+  padding: 10vh 2rem;
+  background-image: url("https://images.unsplash.com/photo-1594671581654-cc7ed83167bb?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: repeat-x;
+  background-position: 0 -38px, 17px -40px;
+  color: $color-secondary;
+  text-align: center;
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+
+  h1 {
+    // @include logomark;
+    display: inline-grid;
+    min-height: var(--logomark-height);
+    padding: var(--logomark-padding);
+    border: 0.16em solid $color-primary;
+    box-shadow: 0.12em 0.12em $color-bordershadow;
+    place-content: center;
+    color: $color-secondary;
+    font-weight: 700;
+  }
+
+  h2 {
+    max-width: 30ch;
+  }
+}
+// DONE 12-4

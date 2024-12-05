@@ -12,6 +12,11 @@
 
     @media (min-width: 120ch) {
       transform: rotate(-8deg) translateX(-30%);
+      margin-left: .5em;
+    }
+
+    @media (max-width: 1010px) {
+      padding: 1em;
     }
   }
 
@@ -30,7 +35,7 @@
         color: var(--color-primary-alt);
         font-size: 0.9em;
         font-weight: normal;
-        content: "← Whoa, text gradients!";
+        content: "";
       }
     }
   }
@@ -39,3 +44,5 @@
     align-self: center;
   }
 }
+
+// DONT 12-4

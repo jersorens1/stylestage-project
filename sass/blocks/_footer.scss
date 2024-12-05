@@ -1,0 +1,85 @@
+.page-footer {
+  --logomark-height: 2em;
+  --logomark-padding: 0;
+
+  position: relative;
+  display: flex;
+  padding: 2.5rem;
+  background-color: var(--color-primary);
+  background-image: linear-gradient(4deg, var(--color-secondary) -80%, transparent);
+  color: var(--color-light);
+  text-align: center;
+
+  &::before {
+    @include logomark;
+
+    display: inline-grid;
+    min-height: var(--logomark-height);
+    padding: var(--logomark-padding);
+    border: 0.16em solid var(--color-primary);
+    border-radius: 7px;
+    box-shadow: 0.12em 0.12em var(--color-secondary);
+    place-content: center;
+    position: absolute;
+    left: 50%;
+    width: 2em;
+    transform: translate(-50%, -100%);
+    background-color: var(--color-background);
+    color: var(--color-secondary);
+    font-family: var(--font-family);
+    font-size: 3rem;
+    font-weight: $font-weight-less-strong;
+    content: "S";
+  }
+
+  p:first-child {
+    margin-top: 3rem;
+    font-weight: var(--font-weight-strong);
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+
+  p a {
+    color: inherit;
+  }
+
+  ul {
+    grid-template-columns: repeat(auto-fit, minmax(12ch, auto));
+  }
+
+  .container > :last-child {
+    margin-bottom: 0;
+  }
+
+  [class^=link] {
+    width: 100%;
+    min-height: 2.5em;
+    background-color: var(--color-background);
+    color: var(--color-primary);
+  }
+}
+@media (max-width: 500px) {
+  .page-footer ul li {
+    min-width: 100%;
+    margin: 0.5em;
+  }
+}
+@media (max-width: 600px) {
+  .page-footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1010px) {
+  .page-footer ul li {
+    margin: -0.5em 0.5em;
+  }
+
+  .page-footer [class^="link"] {
+    min-height: 3em;
+  }
+}
+
+// DONE 12-4

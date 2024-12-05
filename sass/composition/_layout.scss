@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+// stylelint-disable no-descending-specificity
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.3em;
+  border-radius: 8px;
+  color: var(--color-secondary);
+}
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+  border-radius: 8px;
+  color: var(--color-text);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: var(--font-family);
+  background-color: var(--color-background);
+}
+
+main {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+main:focus {
+  outline: none;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+article {
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+}
+
+article,
+.page-footer,
+#styles {
+  .container {
+    width: 100%;
+    max-width: 150ch;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+article,
+#styles {
+  padding: 1rem;
+}
+
+.page-footer ul,
+.features {
+  display: grid;
+  margin: 0 0 2rem;
+  padding: 0;
+  grid-gap: 1em;
+  list-style: none;
+}
+// DONE 12-4
