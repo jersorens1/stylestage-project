@@ -10,6 +10,11 @@
       color: transparent;
     }
 
+    p:nth-of-type(1) {
+      font-size: var(--font-size-h4);
+      font-weight: var(--font-weight-strong);
+    }
+
     @media (min-width: 120ch) {
       transform: rotate(-8deg) translateX(-30%);
       margin-left: .5em;
@@ -17,6 +22,11 @@
 
     @media (max-width: 1010px) {
       padding: 1em;
+    }
+  }
+    @media (min-width: 320px) and (max-width: 765px) {
+    .container>a {
+      width: 100%;
     }
   }
 

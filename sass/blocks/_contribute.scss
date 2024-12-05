@@ -43,6 +43,7 @@
           flex: 1;
       z-index: 1;
       padding: 1em;
+      margin: 0;
 
       &::before {
         counter-increment: section;

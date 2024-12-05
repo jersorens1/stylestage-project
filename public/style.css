@@ -417,6 +417,10 @@ nav ul li {
     color: transparent;
   }
 }
+#guidelines h3 p:nth-of-type(1) {
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-strong);
+}
 @media (min-width: 120ch) {
   #guidelines h3 {
     transform: rotate(-8deg) translateX(-30%);
@@ -426,6 +430,11 @@ nav ul li {
 @media (max-width: 1010px) {
   #guidelines h3 {
     padding: 1em;
+  }
+}
+@media (min-width: 320px) and (max-width: 765px) {
+  #guidelines .container > a {
+    width: 100%;
   }
 }
 @supports (background-clip: text) or (-webkit-background-clip: text) {
@@ -492,6 +501,7 @@ nav ul li {
   flex: 1;
   z-index: 1;
   padding: 1em;
+  margin: 0;
 }
 #contribute section li::before {
   counter-increment: section;
@@ -747,30 +757,8 @@ nav ul li {
 .profile ul li span:nth-child(2) a {
   color: inherit;
 }
-@media (min-width: 180ch) {
-  .profile {
-    position: fixed;
-    right: 2vmin;
-    bottom: 2vmin;
-    max-width: 30ch;
-    margin-bottom: 0;
-    border-radius: var(--border-radius);
-    background-color: var(--color-light);
-    box-shadow: 0 2px 5px rgba(38, 125, 171, 0.15);
-  }
-  .profile ul {
-    justify-content: unset;
-  }
-  .profile ul li {
-    padding: 0;
-  }
-  .profile ul li span:nth-child(1) {
-    width: 8ch;
-    margin-right: 0;
-  }
-}
 
-@media (min-width: 515px) and (max-width: 765px) {
+@media (min-width: 320px) and (max-width: 765px) {
   .profile .container > a {
     margin-left: 0;
     width: 100%;
@@ -916,7 +904,7 @@ nav ul li {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0 0.75em;
+  padding: 0 1em;
   border-radius: 6px;
   transform: translate(0, 0);
   transition: 180ms all ease-in-out;
@@ -965,12 +953,7 @@ nav ul li {
 .link-allstyles {
   font-size: var(--font-size-h4);
 }
-@media (max-width: 400px) {
-  .link-allstyles {
-    margin-left: 6rem;
-  }
-}
-@media (min-width: 400px) and (max-width: 765px) {
+@media (min-width: 320px) and (max-width: 765px) {
   .link-allstyles {
     width: 100%;
   }
