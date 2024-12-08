@@ -11,6 +11,7 @@ nav {
     margin: 0;
     padding: 0;
     list-style: none;
+    border-bottom: 4px solid var(--color-secondary);
     background: linear-gradient(30deg, var(--color-secondary), var(--color-primary) 25%, var(--color-primary) 70%, var(--color-secondary));
 
     a {
